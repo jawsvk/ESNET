@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace Day1Exe
 {
     partial class Form1
     {
