@@ -7,13 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsApp2
+namespace IssueTran
 {
     using System;
     using System.Collections.Generic;
     
     public partial class Movy
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Movy()
+        {
+            this.IssueTrans = new HashSet<IssueTran>();
+        }
+    
         public short VideoCode { get; set; }
         public string MovieTitle { get; set; }
         public string MovieType { get; set; }
@@ -25,6 +31,7 @@ namespace WindowsFormsApp2
         public Nullable<short> TotalStock { get; set; }
         public Nullable<short> NumberRented { get; set; }
     
-        public virtual Producer Producer { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<IssueTran> IssueTrans { get; set; }
     }
 }
